@@ -1,8 +1,20 @@
 #!/bin/bash
 cd $HOME
-echo Would you like the higest FPS
-# Best FPS
-wget https://github.com/mikehooper/Minecraft/raw/main/lwjgl3arm32.tar.gz
-
-# Latest Build
-wget https://github.com/mikehooper/Minecraft/raw/main/lwjgl2arm32.tar.gz
+read -p "Enter 1 for 1.12.2 (Best FPS)
+Enter 2 for 1.16.5 (Latest)
+" -n 1 -r
+echo     #
+if [ $REPLY -eq 1 ]
+then
+    wget https://github.com/mikehooper/Minecraft/raw/main/lwjgl3arm32.tar.gz
+    wget https://optifine.net/downloadx?f=OptiFine_1.12.2_HD_U_G5.jar&x=30f4ff6f655a91c80d2d5d83d586f49c
+    java -jar OptiFine_1.12.2_HD_U_G5.jar
+elif [ $REPLY -eq 2 ]
+then
+    wget https://github.com/mikehooper/Minecraft/raw/main/lwjgl2arm32.tar.gz
+    wget https://optifine.net/downloadx?f=OptiFine_1.16.5_HD_U_G7.jar&x=e1c6567d2d3a4cf30464d0327f1df750wget
+    java -jar OptiFine_1.16.5_HD_U_G7.jar
+else
+    echo Invalid
+filin
+wget -p /home/$USER/.minecraft https://raw.githubusercontent.com/kirbycope/mcje-pi/main/optionsof.txt # Optifine settings
