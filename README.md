@@ -16,10 +16,10 @@ Open terminal and paste in the following, `wget -qO- https://raw.githubuserconte
 ## Running Minecraft
 1. Run the Minecraft Launcher
 1. Select "Edit Profile"
-1. Check "JVM Arguments"
+1. Check "JVM Arguments" 
    - If you chose 'Fastest' during the install, add `-Dorg.lwjgl.librarypath=/home/pi/lwjgl2arm32`
    - If you chose 'Latest' during the install, add `-Dorg.lwjgl.librarypath=/home/pi/lwjgl3arm32`
-
+   - Change `pi` to your username if you changed it from the default
 ## Credits
 How to setup Minecraft 1.8.9 on RaspPi2 - https://www.raspberrypi.org/forums/viewtopic.php?t=137279
 How to setup any version of Minecraft on Pi4 - https://www.raspberrypi.org/forums/viewtopic.php?t=284448
