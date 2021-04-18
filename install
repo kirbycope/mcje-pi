@@ -1,10 +1,6 @@
 #!/bin/bash
 cd $HOME
-if [ ! -f optionsof.txt ]; then
-    wget https://raw.githubusercontent.com/kirbycope/mcje-pi/main/optionsof.txt
-    sudo cp optionsof.txt /home/$USER/.minecraft/optionsof.txt
-fi
-read -p "Enter 1 for 1.12.2 (Best FPS)
+read -p "Enter 1 for 1.12.2 (Fastest)
 Enter 2 for 1.16.5 (Latest)
 " -n 1 -r
 if [ $REPLY -eq 1 ]; then
@@ -28,5 +24,16 @@ elif [ $REPLY -eq 2 ]; then
 else
     echo Invalid
 fi
+if [ ! -f optionsof.txt ]; then
+    wget https://raw.githubusercontent.com/kirbycope/mcje-pi/main/optionsof.txt
+    sudo cp optionsof.txt /home/$USER/.minecraft/optionsof.txt
+fi
+if [ ! -d /usr/share/minecraftjava/Natives ]; then
+    sudo mkdir /usr/share/minecraftjava/Natives
+    cd /usr/share/minecraftjava/Natives
+    sudo wget https://www.dropbox.com/s/4oxcvz3ky7a3x6f/liblwjgl.so
+    sudo wget https://www.dropbox.com/s/m0r8e01jg2og36z/libopenal.so
+fi
+cd $HOME
 echo "
 Done!"
