@@ -1,0 +1,8 @@
+#!/bin/bash
+cd $HOME
+echo Would you like the higest FPS
+# Best FPS
+wget https://github.com/mikehooper/Minecraft/raw/main/lwjgl3arm32.tar.gz
+
+# Latest Build
+wget https://github.com/mikehooper/Minecraft/raw/main/lwjgl2arm32.tar.gz
