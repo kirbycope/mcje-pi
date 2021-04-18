@@ -11,7 +11,7 @@ Installs [lwjgl](https://www.lwjgl.org/), [Optifine](https://www.optifine.net/ho
 1. Save and reboot
 
 ## Running the script
-Open terminal and paste in the following, wget -qO- https://raw.githubusercontent.com/kirbycope/mcje-pi/main/install | bash and then press [Enter]
+Open terminal and paste in the following, `wget -qO- https://raw.githubusercontent.com/kirbycope/mcje-pi/main/install | bash` and then press [Enter]
 
 ## Running Minecraft
 1. Run the Minecraft Launcher
