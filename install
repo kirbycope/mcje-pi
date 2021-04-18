@@ -14,7 +14,7 @@ if [ $REPLY -eq 1 ]; then
     fi
     if [ ! -f OptiFine_1.12.2_HD_U_G5.jar ]; then
         wget -O OptiFine_1.12.2_HD_U_G5.jar https://optifine.net/downloadx?f=OptiFine_1.12.2_HD_U_G5.jar&x=30f4ff6f655a91c80d2d5d83d586f49c
-    java -jar OptiFine_1.12.2_HD_U_G5.jar
+    	java -jar OptiFine_1.12.2_HD_U_G5.jar
     fi
 elif [ $REPLY -eq 2 ]; then
     if [ ! -f lwjgl3arm32.tar.gz ]; then
@@ -23,7 +23,7 @@ elif [ $REPLY -eq 2 ]; then
     fi
     if [ ! -f /home/$USER/OptiFine_1.16.5_HD_U_G7.jar ]; then
         wget -O OptiFine_1.16.5_HD_U_G7.jar https://optifine.net/downloadx?f=OptiFine_1.16.5_HD_U_G7.jar&x=e1c6567d2d3a4cf30464d0327f1df750
-    java -jar OptiFine_1.16.5_HD_U_G7.jar
+    	java -jar OptiFine_1.16.5_HD_U_G7.jar
     fi
 else
     echo Invalid
