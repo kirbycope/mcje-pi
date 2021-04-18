@@ -6,7 +6,7 @@ Enter 2 for 1.16.5 (Latest)
 if [ $REPLY -eq 1 ]; then
     if [ ! -f lwjgl2arm32.tar.gz ]; then
         wget https://github.com/mikehooper/Minecraft/raw/main/lwjgl2arm32.tar.gz
-	tar -zxf lwjgl3arm32.tar.gz -C ~/lwjgl3arm32
+	tar -zxf lwjgl2arm32.tar.gz -C ~/lwjgl2arm32
     fi
     if [ ! -f OptiFine_1.12.2_HD_U_G5.jar ]; then
         wget -O OptiFine_1.12.2_HD_U_G5.jar https://optifine.net/downloadx?f=OptiFine_1.12.2_HD_U_G5.jar&x=30f4ff6f655a91c80d2d5d83d586f49c
@@ -15,11 +15,15 @@ if [ $REPLY -eq 1 ]; then
 elif [ $REPLY -eq 2 ]; then
     if [ ! -f lwjgl3arm32.tar.gz ]; then
         wget https://github.com/mikehooper/Minecraft/raw/main/lwjgl3arm32.tar.gz
-        tar -zxf lwjgl2arm32.tar.gz -C ~/lwjgl2arm32
+        tar -zxf lwjgl3arm32.tar.gz -C ~/lwjgl3arm32
     fi
     if [ ! -f /home/$USER/OptiFine_1.16.5_HD_U_G7.jar ]; then
         wget -O OptiFine_1.16.5_HD_U_G7.jar https://optifine.net/downloadx?f=OptiFine_1.16.5_HD_U_G7.jar&x=e1c6567d2d3a4cf30464d0327f1df750
     	java -jar OptiFine_1.16.5_HD_U_G7.jar
+    fi
+    if [ ! -f /home/$USER/IJAMinecrafts-OneBlock-1-16-4.zip ]; then
+	wget https://ijaminecraft.com/download/map/oneblock/IJAMinecrafts-OneBlock-1-16-4.zip
+        unzip -d /home/$USER/.minecraft/saves IJAMinecrafts-OneBlock-1-16-4.zip
     fi
 else
     echo Invalid
