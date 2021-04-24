@@ -1,8 +1,8 @@
 # Minecraft Java Edition for the Raspberry Pi
-This project suppliments the Minecraft instal you can do using PiApps. If you are unfamilar with that setup, see this [guide](https://flynnsforge.com/easily-install-minecraft-java-edition-on-the-raspberry-pi4/).
+This project suppliments the Minecraft install you can do using PiApps. If you are unfamilar with that setup, see this [guide](https://flynnsforge.com/easily-install-minecraft-java-edition-on-the-raspberry-pi4/).
 
 ## What this script does
-Installs [lwjgl](https://www.lwjgl.org/), [Optifine](https://www.optifine.net/home), and a graphics preset.
+Installs [lwjgl](https://www.lwjgl.org/), [Optifine](https://www.optifine.net/home), and a graphics preset (everything turned down @ 480p).
 
 ## What you should do first
 1. Open terminal and run `sudo apt-get -y install xcompmgr libgl1-mesa-dri && sudo apt-get -y install libalut0 libalut-dev && sudo apt-get -y install mesa-utils`
